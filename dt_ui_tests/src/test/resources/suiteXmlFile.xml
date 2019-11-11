@@ -1,0 +1,92 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--<suite name="All Test Suite" parallel="methods" thread-count="5">-->
+<suite name="Collaborator functionalities">
+    <listeners>
+        <listener class-name="retry.analyzer.RetryListenerClass"/>
+    </listeners>
+
+    <test name="Menu tabs test scenario - Testing tabs loading of Collaborator">
+        <packages>
+            <package name="datango.ui.general"/>
+        </packages>
+    </test>
+
+    <test name="Login  test scenario">
+        <packages>
+            <package name="datango.ui.login"/>
+        </packages>
+    </test>
+
+    <test name="Workarea test scenario">
+        <packages>
+            <package name="datango.ui.workarea"/>
+        </packages>
+    </test>
+
+    <test name="Registration codes test scenario">
+        <packages>
+            <package name="datango.ui.administration.registrationCodes"/>
+        </packages>
+    </test>
+
+    <test name="Workarea  administration test scenario">
+        <packages>
+            <package name="datango.ui.administration.workarea"/>
+        </packages>
+    </test>
+
+    <test name="Workflow process administration test scenario">
+        <packages>
+            <package name="datango.ui.administration.workflow"/>
+        </packages>
+    </test>
+
+    <test name="Permissions administration test scenario">
+        <packages>
+            <package name="datango.ui.administration.permissions"/>
+        </packages>
+    </test>
+
+    <test name="Courses assignment test scenario">
+        <packages>
+            <package name="datango.ui.administration.courseAssignments"/>
+        </packages>
+    </test>
+
+    <test name="Tasks test scenario">
+        <packages>
+            <package name="datango.ui.tasks"/>
+        </packages>
+    </test>
+
+    <test name="Courses test scenario">
+        <classes>
+            <class name="datango.ui.courses.CoursesTest"/>
+        </classes>
+    </test>
+
+    <test name="Course approval test scenario">
+        <classes>
+            <class name="datango.ui.courses.CoursesApprovalTest"/>
+        </classes>
+    </test>
+
+    <test name="Learning reporter test scenario">
+        <packages>
+            <package name="datango.ui.learningReporter"/>
+        </packages>
+    </test>
+
+    <test name="OU, users, groups administration test scenario">
+        <packages>
+            <package name="datango.ui.administration.orgView"/>
+        </packages>
+    </test>
+
+    <test name="Settings test scenario">
+        <packages>
+            <package name="datango.ui.settings"/>
+        </packages>
+    </test>
+
+</suite>

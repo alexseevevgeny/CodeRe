@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Successful",
+    "matchedStatuses": ["passed"]
+  },
+  {
+    "name": "Infrastructure problems",
+    "matchedStatuses": ["broken", "failed"],
+    "messageRegex": ".*something went wrong.*"
+  },
+  {
+    "name": "Code defects",
+    "matchedStatuses": ["broken"],
+    "traceRegex": ".*NullPointerException.*"
+  },
+  {
+    "name": "Product defects",
+    "matchedStatuses": ["failed"]
+  },
+  {
+    "name": "Defects affecting the test",
+    "matchedStatuses": ["broken"]
+  }
+]

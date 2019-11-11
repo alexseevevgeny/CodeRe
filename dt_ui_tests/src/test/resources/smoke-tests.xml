@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke tests of Collaborator">
+    <test name="Login tests">
+        <groups>
+            <run>
+                <include name="smoke-test"/>
+            </run>
+        </groups>
+        <!--<packages>-->
+            <!--<package name="datango.ui.login.*"/>-->
+        <!--</packages>-->
+        <classes>
+            <class name="datango.ui.login.LoginTest"/>
+        </classes>
+    </test>
+
+</suite>
